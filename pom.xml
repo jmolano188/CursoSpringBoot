@@ -11,8 +11,12 @@
 	<groupId>com.FlyBoot</groupId>
 	<artifactId>CursoSpring</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
 	<name>CursoSpring</name>
 	<description>Inicio proyecto SpringBoot</description>
+	<modules>
+		<module>POO</module>
+	</modules>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
