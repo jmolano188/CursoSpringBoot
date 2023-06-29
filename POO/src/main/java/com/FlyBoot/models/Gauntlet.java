@@ -1,6 +1,5 @@
 package com.FlyBoot.models;
 
-import com.FlyBoot.models.gems.AbstractGem;
 import com.FlyBoot.models.gems.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
