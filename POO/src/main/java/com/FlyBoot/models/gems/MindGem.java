@@ -1,4 +1,4 @@
-package com.FlyBoot.models;
+package com.FlyBoot.models.gems;
 
 public class MindGem extends AbstractGem{
 
@@ -12,4 +12,6 @@ public class MindGem extends AbstractGem{
     public void showDescription() {
         System.out.println(description);
     }
+
+
 }

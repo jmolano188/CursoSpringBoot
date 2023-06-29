@@ -1,4 +1,4 @@
-package com.FlyBoot.models;
+package com.FlyBoot.models.gems;
 
 public abstract class AbstractGem {
 
@@ -16,4 +16,11 @@ public abstract class AbstractGem {
     public void showInfo(){
         System.out.println("Name: "+ this.name + " -- Color: "+ this.color);
     };
+
+    @Override
+    public String toString() {
+        return "{ name='" + name + '\'' +
+                ", color='" + color + '\'' +
+                " }";
+    }
 }

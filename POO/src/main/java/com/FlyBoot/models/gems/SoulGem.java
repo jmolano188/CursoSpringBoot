@@ -1,4 +1,4 @@
-package com.FlyBoot.models;
+package com.FlyBoot.models.gems;
 
 public class SoulGem extends AbstractGem{
 
