@@ -2,13 +2,18 @@ package com.FlyBoot.models;
 
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component @Getter
 public class Thanos {
 
-    private String name = "Thanos";
-    private String zaga = "Infinity war";
+    @Value("Thanos")
+    private String name;
+    @Value("${zaga}")
+    private String zaga;
+    @Value("${thanos.age}")
+    private Integer age;
 
     /*
     Inyeccion via propiedad
