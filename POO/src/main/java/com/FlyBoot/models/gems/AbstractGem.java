@@ -2,8 +2,8 @@ package com.FlyBoot.models.gems;
 
 public abstract class AbstractGem {
 
-    private String name;
-    private String color;
+    public String name;
+    public String color;
 
     protected AbstractGem(String name, String color) {
         this.name = name;
@@ -19,8 +19,9 @@ public abstract class AbstractGem {
 
     @Override
     public String toString() {
-        return "{ name='" + name + '\'' +
+        return "AbstractGem{" +
+                "name='" + name + '\'' +
                 ", color='" + color + '\'' +
-                " }";
+                '}';
     }
 }

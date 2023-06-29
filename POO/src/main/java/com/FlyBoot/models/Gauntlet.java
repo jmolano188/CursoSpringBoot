@@ -8,17 +8,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class Gauntlet {
     @Qualifier(value = "mind")
-    private AbstractGem mind;
+    public AbstractGem mind;
     @Qualifier(value = "soul")
-    private AbstractGem soul;
+    public AbstractGem soul;
     @Qualifier(value = "time")
-    private AbstractGem time;
+    public AbstractGem time;
     @Qualifier(value = "space")
-    private AbstractGem space;
+    public AbstractGem space;
     @Qualifier(value = "power")
-    private AbstractGem power;
+    public AbstractGem power;
     @Qualifier(value = "reality")
-    private AbstractGem reality;
+    public AbstractGem reality;
 
     /*
     Inyeccion via constructor
@@ -35,12 +35,13 @@ public class Gauntlet {
 
     @Override
     public String toString() {
-        return "{ mind=" + mind.toString() +
+        return "Gauntlet{" +
+                "mind=" + mind +
                 ", soul=" + soul +
                 ", time=" + time +
                 ", space=" + space +
                 ", power=" + power +
                 ", reality=" + reality +
-                " }";
+                '}';
     }
 }

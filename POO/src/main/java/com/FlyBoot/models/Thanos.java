@@ -6,21 +6,21 @@ import org.springframework.stereotype.Component;
 @Component
 public class Thanos {
 
-    private String name = "Thanos";
-    private String zaga = "Infinity war";
+    public String name = "Thanos";
+    public String zaga = "Infinity war";
 
     /*
     Inyeccion via propiedad
      */
     @Autowired
-    private Gauntlet gauntlet;
+    public Gauntlet gauntlet;
 
     @Override
     public String toString() {
         return "Thanos{" +
                 "name='" + name + '\'' +
                 ", zaga='" + zaga + '\'' +
-                ", gauntlet=" + gauntlet.toString() +
+                ", gauntlet=" + gauntlet +
                 '}';
     }
 }
