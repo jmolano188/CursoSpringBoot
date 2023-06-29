@@ -1,9 +1,12 @@
 package com.FlyBoot.models.gems;
 
+import lombok.Getter;
+
+@Getter
 public abstract class AbstractGem {
 
-    public String name;
-    public String color;
+    private String name;
+    private String color;
 
     protected AbstractGem(String name, String color) {
         this.name = name;

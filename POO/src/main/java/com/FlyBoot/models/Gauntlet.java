@@ -1,24 +1,25 @@
 package com.FlyBoot.models;
 
 import com.FlyBoot.models.gems.*;
+import lombok.Getter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Component;
 
-@Component
+@Component @Getter
 public class Gauntlet {
     @Qualifier(value = "mind")
-    public AbstractGem mind;
+    private AbstractGem mind;
     @Qualifier(value = "soul")
-    public AbstractGem soul;
+    private AbstractGem soul;
     @Qualifier(value = "time")
-    public AbstractGem time;
+    private AbstractGem time;
     @Qualifier(value = "space")
-    public AbstractGem space;
+    private AbstractGem space;
     @Qualifier(value = "power")
-    public AbstractGem power;
+    private AbstractGem power;
     @Qualifier(value = "reality")
-    public AbstractGem reality;
+    private AbstractGem reality;
 
     /*
     Inyeccion via constructor
