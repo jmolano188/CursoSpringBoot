@@ -1,5 +1,8 @@
 package com.FlyBoot.models.gems;
 
+import org.springframework.stereotype.Component;
+
+@Component
 public class PowerGem extends AbstractGem{
 
     public String description = "This is power gem";

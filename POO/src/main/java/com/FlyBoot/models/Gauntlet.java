@@ -1,19 +1,24 @@
 package com.FlyBoot.models;
 
 import com.FlyBoot.models.gems.AbstractGem;
+import com.FlyBoot.models.gems.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
 
+@Component
 public class Gauntlet {
-    private AbstractGem mind;
-    private AbstractGem soul;
-    private AbstractGem time;
-    private AbstractGem space;
-    private AbstractGem power;
-    private AbstractGem reality;
+    private MindGem mind;
+    private SoulGem soul;
+    private TimeGem time;
+    private SpaceGem space;
+    private PowerGem power;
+    private RealityGem reality;
 
     /*
-    Inyeccion de dependencias via constructor
+    Inyeccion via constructor
      */
-    public Gauntlet(AbstractGem mind, AbstractGem soul, AbstractGem time, AbstractGem space, AbstractGem power, AbstractGem reality) {
+    @Autowired //Nuevas versiones no es necesario esta anotacion en el tipo constructor pero es una buena practica
+    public Gauntlet(MindGem mind, SoulGem soul, TimeGem time, SpaceGem space, PowerGem power, RealityGem reality) {
         this.mind = mind;
         this.soul = soul;
         this.time = time;

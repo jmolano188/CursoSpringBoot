@@ -1,17 +1,19 @@
 package com.FlyBoot.models;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+@Component
 public class Thanos {
 
     private String name = "Thanos";
     private String zaga = "Infinity war";
-    private Gauntlet gauntlet;
 
     /*
-    Inyenccion de dependencia via setter
+    Inyeccion via propiedad
      */
-    public void setGauntlet(Gauntlet gauntlet) {
-        this.gauntlet = gauntlet;
-    }
+    @Autowired
+    private Gauntlet gauntlet;
 
     @Override
     public String toString() {

@@ -3,10 +3,21 @@ package com.FlyBoot;
 import com.FlyBoot.models.Gauntlet;
 import com.FlyBoot.models.Thanos;
 import com.FlyBoot.models.gems.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-public class Main {
+@SpringBootApplication
+public class PooSpringApplication implements CommandLineRunner {
+
+    @Autowired
+    private Thanos thanos;
     public static void main(String[] args) {
 
+        SpringApplication.run(PooSpringApplication.class, args);
+
+        /* //CLASE PASADA InyDep sin IoC
         AbstractGem timeGem = new TimeGem();
         AbstractGem soulGem = new SoulGem();
         AbstractGem spaceGem = new SpaceGem();
@@ -20,5 +31,11 @@ public class Main {
         thanos.setGauntlet(gauntlet);
 
         System.out.println(thanos);
+        */
+    }
+
+    @Override
+    public void run(String... args) throws Exception {
+        System.out.println(thanos.toString());
     }
 }
