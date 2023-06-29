@@ -2,7 +2,7 @@ package com.FlyBoot.models.gems;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "space")
 public class SpaceGem extends AbstractGem{
 
     public String description = "This is space gem";

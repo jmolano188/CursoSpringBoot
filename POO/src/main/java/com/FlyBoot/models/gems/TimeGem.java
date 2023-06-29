@@ -2,7 +2,7 @@ package com.FlyBoot.models.gems;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "time")
 public class TimeGem extends AbstractGem{
 
     public String description = "This is time gem";

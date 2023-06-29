@@ -2,7 +2,7 @@ package com.FlyBoot.models.gems;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "reality")
 public class RealityGem extends AbstractGem{
 
     public String description = "This is reality gem";

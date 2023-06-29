@@ -2,7 +2,7 @@ package com.FlyBoot.models.gems;
 
 import org.springframework.stereotype.Component;
 
-@Component
+@Component(value = "mind")
 public class MindGem extends AbstractGem{
 
     public String description = "This is mind gem";
