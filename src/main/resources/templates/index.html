@@ -35,47 +35,18 @@
 <!-- CARDS  -->
 <div class="container">
     <div class="row">
-        <div class="col-3">
+        <div th:each="post : ${posts}" class="col-3">
             <div class="card" style="width: 18rem;">
-                <img th:src="@{/img/post.png}" src="../static/img/post.png" class="card-img-top" alt="...">
+                <img th:src="${post.urlImage}" src="../static/img/post.png" class="card-img-top" alt="...">
                 <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img th:src="@{/img/post.png}" src="../static/img/post.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img th:src="@{/img/post.png}" src="../static/img/post.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-3">
-            <div class="card" style="width: 18rem;">
-                <img th:src="@{/img/post.png}" src="../static/img/post.png" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    <h5 th:text="${post.title}" class="card-title">Card title</h5>
+                    <p th:text="${post.description}" class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                     <a href="#" class="btn btn-primary">Go somewhere</a>
                 </div>
             </div>
         </div>
 
+        <!-- PAGINACION  -->
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center mt-5">
                 <li class="page-item disabled">
@@ -91,5 +62,8 @@
         </nav>
     </div>
 </div>
+<foot>
+    <p>footer</p>
+</foot>
 </body>
 </html>
