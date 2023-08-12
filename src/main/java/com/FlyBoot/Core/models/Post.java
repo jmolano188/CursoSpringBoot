@@ -3,7 +3,7 @@ package com.FlyBoot.Core.models;
 import lombok.*;
 
 import java.util.Date;
-@Getter @Setter @AllArgsConstructor
+@Getter @Setter @AllArgsConstructor @NoArgsConstructor
 public class Post {
 
     private int id;
@@ -11,5 +11,6 @@ public class Post {
     private String descripcion;
     private String urlImg;
     private Date fechaCreacion;
+
 
 }
