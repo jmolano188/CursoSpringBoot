@@ -1,4 +1,4 @@
-package com.FlyBoot.Core.singletons;
+package com.FlyBoot.Core.singleton;
 
 import java.util.Objects;
 

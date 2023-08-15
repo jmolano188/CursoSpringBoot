@@ -1,7 +1,6 @@
 package com.FlyBoot.Core;
 
-import com.FlyBoot.Core.singletons.Credenciales;
-import org.springframework.boot.SpringApplication;
+import com.FlyBoot.Core.singleton.Credenciales;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
